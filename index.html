@@ -9,7 +9,7 @@
 
 
 </head>
-<body>
+<div id="page">
 
 <nav>
         <div class="navWrapHome" id="navWrapHome"><img src="images/home.png"><span>Home</span></div>
@@ -21,10 +21,32 @@
 </nav>
 
 <div class="mainArticle" id="mainArticle"></div>
+</div>
 
+<div id="loading"></div>
 </body>
 
 <script>
+
+
+    function onReady(callback) {
+        var intervalID = window.setInterval(checkReady, 1000);
+
+        function checkReady() {
+            if (document.getElementsByTagName('body')[0] !== undefined) {
+                window.clearInterval(intervalID);
+                callback.call(this);
+            }
+        }
+    }
+
+    function show() {
+        $("#loading").fadeOut(1000);
+    }
+
+    onReady(function () {
+        show('loading', false);
+    });
 
 /*
 * For testing this is changing but when the final website is finished this should be:
