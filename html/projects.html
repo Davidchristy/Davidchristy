@@ -1,0 +1,77 @@
+<div class="Projects">
+    <h2 class="ProjectType" id="ProjectWeb">Websites</h2>
+    <div class="ProjectText" id="WebText">
+        <!-- ECM website-->
+        <a href="http://ecm-tucson.org/">
+            <img  src="./images/projects/ecmWebsite.png"></a></img>
+        <div>
+            The Episcopal Campus Ministry, Tucson, Arizona.
+            <br>
+            Made in Drupal
+        </div>
+
+        <br>
+        <br>
+        <!-- CWSGeoPhysical-->
+        <a href="http://cwsgeophysical.com/">
+            <img src="./images/projects/cwsWebsitePic.png"></a></img>
+        <div>
+            CWS Geophysical Consulting Incorporated, Global
+            <br>
+            Made in Pure HTML/CSS
+        </div>
+    </div>
+
+    <h2 class="ProjectType" id="ProjectPy">Python</h2>
+    <div class="ProjectText" id="PyText">
+        I'm working on porting the Python scripts over to this website.
+        For now take a look at my <a href="https://github.com/Davidchristy/Python">GitHub</a> page for a brief overview
+    </div>
+
+    <h2 class="ProjectType" id="ProjectJava">Java</h2>
+    <div class="ProjectText" id="JavaText">
+        I'm working on porting the Java scripts over to this website.
+        For now take a look at my <a href="https://github.com/Davidchristy">GitHub</a> page for a brief overview
+    </div>
+
+    <h2 class="ProjectType" id="ProjectProc">Processing</h2>
+    <div class="ProjectText" id="ProcText">
+        I'm working on porting the Processing scripts over to this website.
+        For now take a look at my <a href="https://github.com/Davidchristy">GitHub</a> page for a brief overview
+    </div>
+
+</div>
+
+<script>
+    var clicked = true;
+    $('.ProjectType').click(function () {
+        var header = $(this);
+
+        switch(this.id){
+            case "ProjectWeb":
+                $("#WebText").slideToggle();
+                break;
+            case "ProjectPy":
+                $("#PyText").slideToggle();
+                break;
+            case "ProjectJava":
+                $("#JavaText").slideToggle();
+                break;
+            case "ProjectProc":
+                $("#ProcText").slideToggle();
+                break;
+
+        }
+
+        if(header.width() > Math.round(header.parent().width() *.25)){
+            header.width(header.parent().width() *.25);
+        }
+        else {
+            header.width(header.parent().width() *.5);
+        }
+        header[0].style.transition = "all 0500ms";
+    });
+
+</script>
+
+

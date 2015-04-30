@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/switch.js"></script>
+
+
+</head>
+<body>
+
+<nav>
+        <div class="navWrapHome" id="navWrapHome"><img src="images/home.png"><span>Home</span></div>
+        <div class="navWrapProject" id="navWrapProject"><img src="images/projects.png"><span>Projects</span></div>
+        <div class="navWrapThoughts" id="navWrapThoughts"><img src="images/thoughts.png"><span>Thoughts</span></div>
+        <div class="navWrapProgramming" id="navWrapProgramming"><img src="images/programming.png"><span>Programming</span></div>
+        <div class="navWrapAbout" id="navWrapAbout"><img src="images/about.png"><span>Contact</span></div>
+
+</nav>
+
+<div class="mainArticle" id="mainArticle"></div>
+
+</body>
+
+<script>
+
+/*
+* For testing this is changing but when the final website is finished this should be:
+* $("#mainArticle").load("./html/home.html");
+* So the homepage loads first
+* */
+    $("#mainArticle").load("./html/thoughts.html");
+
+    $('#navWrapHome').click(function () {
+        $("#mainArticle").load("./html/home.html");
+    });
+
+    $('#navWrapProject').click(function () {
+        $("#mainArticle").load("./html/projects.html");
+    });
+
+    $('#navWrapThoughts').click(function () {
+        $("#mainArticle").load("./html/thoughts.html");
+    });
+
+    $('#navWrapProgramming').click(function () {
+        $("#mainArticle").load("./html/programming.html");
+    });
+
+    $('#navWrapAbout').click(function () {
+        $("#mainArticle").load("./html/contact.html");
+    });
+
+</script>
+</html>
