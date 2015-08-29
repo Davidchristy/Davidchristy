@@ -1,0 +1,34 @@
+#/bin/bash
+
+while true; do
+	{
+	sleep 30
+	wget https://twitter.com/DavidChristy520 -O twitter
+	if cat twitter | grep "$(date +"%B %d, %Y at %I:%M%p")"; then
+		notify-send "Yes, that just happend" ""
+	fi
+	}&>/dev/null
+	# output=$(hcitool rssi 14:32:D1:E5:9F:28)
+	# if [[ $? -ne 0 ]]; then
+	# 	exit
+	# fi
+	# arrIN=(${output// / })
+	# level="${arrIN[-1]}"
+	# if [[ level -lt -3 ]]; then
+	# 	# waiting one second and trying again
+	# 	echo $level
+	# 	sleep 1
+	# 	output=$(hcitool rssi 14:32:D1:E5:9F:28)
+	# 	if [[ $? -ne 0 ]]; then
+	# 		exit
+	# 	fi
+	# 	arrIN=(${output// / })
+	# 	level="${arrIN[-1]}"
+	# 	if [[ level -lt -3 ]]; then
+	# 		echo ERROR $level
+	# 		$(gnome-screensaver-command -l)
+	# 	fi
+	# else
+	# 	$(gnome-screensaver-command -d)
+	# fi
+done

@@ -1,0 +1,19 @@
+#/bin/bash
+{
+output=$(amixer -D pulse get Master | grep "Front Left:")
+arrIN=(${output// / })
+volume="${arrIN[3]}" 
+
+amixer set Speaker Playback Volume 100%
+amixer set Speaker Playback Volume on
+amixer set Speaker Playback Switch 100%
+amixer set Speaker Playback Switch on
+
+amixer -D pulse sset Master 50%
+
+cvlc  ~/Music/Ed\ Sheeran\ -\ Nina.mp3 &
+sleep 5
+pkill vlc
+amixer -D pulse sset Master $volume
+
+}&>/dev/null
