@@ -1,9 +1,11 @@
 <div class="Projects">
+
+    <h2 class="ProjectHeader" >Click on a project type to see more</h2>
     <h2 class="ProjectType" id="ProjectWeb">Websites</h2>
     <div class="ProjectText" id="WebText">
         <!-- ECM website-->
         <a href="http://ecm-tucson.org/">
-            <img  src="./images/projects/ecmWebsite.png"></a></img>
+            <img  src="./images/projects/ecmWebsite.png"></a>
         <div>
             The Episcopal Campus Ministry, Tucson, Arizona.
             <br>
@@ -24,20 +26,80 @@
 
     <h2 class="ProjectType" id="ProjectPy">Python</h2>
     <div class="ProjectText" id="PyText">
-        I'm working on porting the Python scripts over to this website.
-        For now take a look at my <a href="https://github.com/Davidchristy/Python">GitHub</a> page for a brief overview
+        <span style="font-weight: bold;">PROJECTS</span><br>
+        <a href="https://github.com/Davidchristy/Python-Teacher">Python-Teacher</a>
+        - A script written to teach people the introduction of python
+        <br>
+        <br>
+        <span style="font-weight: bold;">PROOF OF CONCEPT</span><br>
+        <a href="https://github.com/Davidchristy/Python/blob/master/DOS_Something.py">DOS_demo</a>
+        - A simple test program to learn how DOSing work.
+        <br>
+        <a href="https://github.com/Davidchristy/Python/blob/master/dragon.py">L-System (Dragon Curve)</a>
+        - A introduction to L-systems
+        <br>
+        <a href="https://github.com/Davidchristy/Python/blob/master/pi.py">Pi calculator</a>
+        - a geometric form of finding a approximation of pi.
+        <br><br>
+        You can always take a look at my <a href="https://github.com/Davidchristy/Python">GitHub</a> for more code projects
     </div>
+
 
     <h2 class="ProjectType" id="ProjectJava">Java</h2>
     <div class="ProjectText" id="JavaText">
-        I'm working on porting the Java scripts over to this website.
-        For now take a look at my <a href="https://github.com/Davidchristy">GitHub</a> page for a brief overview
+        <span style="font-weight: bold;">EXPERIMENTS</span><br>
+
+        <a href="https://github.com/Davidchristy/terrain-generator">RandomTerrain</a>
+        - Written for a map used in group project, extended to cloud design.
+        <br>
+        <br>
+        <span style="font-weight: bold;">GAMES</span><br>
+
+        <a href="https://github.com/Davidchristy/Checkers">Checkers</a>
+        - Written in one day as "game-a-day" challenge.
+        <br>
+        <a href="https://github.com/Davidchristy/Tic-Tac-Toe">TicTacToe</a>
+        - Written in one day as "game-a-day" challenge.
+        <br>
+        <a href="https://github.com/Davidchristy/Space-Invaders">SpaceInvaders</a>
+        - Written in one day as "game-a-day" challenge.
+        <br>
+        <br>
     </div>
 
     <h2 class="ProjectType" id="ProjectProc">Processing</h2>
+
     <div class="ProjectText" id="ProcText">
-        I'm working on porting the Processing scripts over to this website.
-        For now take a look at my <a href="https://github.com/Davidchristy">GitHub</a> page for a brief overview
+        <span style="font-weight: bold;">PROJECTS</span><br>
+        <a href="processing/clouds.html" target="_blank">Above the Clouds</a>
+
+        - Perlin noise generated ground and clouds.
+        <br>
+        <a href="https://github.com/Davidchristy/Processing">New Horizons</a>
+        - markov chain used to generated abstract horizons from user data
+        <br>
+        <br>
+        <span style="font-weight: bold;">EXPERIMENTS</span><br>
+        <a href="https://github.com/Davidchristy/Processing">Game of Life</a>
+        - A simple program combining Game of Life rules with Genentic Algorithms
+        <br>
+        <a href="https://github.com/Davidchristy/Processing">Moving Circles</a>
+        - a pretty design that simulates gravity in a simple system.
+        <br>
+        <a href="https://github.com/Davidchristy/Processing">Time Vortex</a>
+        - My attempt to make the Dr. Who intro in Proc.
+        <br>
+        <br>
+        <span style="font-weight: bold;">PROOF OF CONCEPT</span><br>
+        <a href="https://github.com/Davidchristy/Processing">Color Wheel</a>
+        - Playing around with color theory and color representation
+        <br>
+        <a href="https://github.com/Davidchristy/Processing">Fuzzy Hearts</a>
+        - A little script that makes a cute little heart
+        <br>
+        <a href="https://github.com/Davidchristy/Processing">Wavy Heart</a>
+        - Added "beat" to Fuzzy Hearts
+        <br><br>
     </div>
 
 </div>
@@ -46,7 +108,7 @@
     var clicked = true;
     $('.ProjectType').click(function () {
         var header = $(this);
-
+        $(".ProjectHeader").slideUp();
         switch(this.id){
             case "ProjectWeb":
                 $("#WebText").slideToggle();
