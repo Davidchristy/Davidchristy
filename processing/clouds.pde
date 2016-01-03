@@ -1,10 +1,10 @@
 void setup(){
  background(0,0,0);
- size(1100, 700);
+ size(550, 350);
  frameRate(24);
  noStroke();
 }
-int pixelSize = 3;
+int pixelSize = 4;
 float mapx = 0;
 float mapy = 0;
 float cloudx = 0;
@@ -26,7 +26,7 @@ int SEED4 = int(random(random(1024)));
 
 void draw(){
   background(100, 100, 255);
-
+  
   drawMap(pixelSize, mapx+100, mapy+100, zoom);
   if(showClouds){
     drawFirstClouds(pixelSize, (cloudx+100), (cloudy+100), zoom - (zoom/2));
@@ -59,13 +59,13 @@ void setZoom(){
       zoom += 0.0001;
       mapy -= (float) (width/pixelSize)/width / ((width/height)*2);
       mapx -= (float) (height/pixelSize)/height / ((width/height)*2);
-     }
+     }  
   }
 }
 }
 
 void setDirection(){
-
+  
   if(keyPressed){
    if (keyCode == UP){
       changey -= .05;
@@ -80,10 +80,10 @@ void setDirection(){
       changey += .05;
     }
   }
-
+  
   mapx += (changex * 0.7);
   mapy += (changey * 0.7);
-
+  
 //  mapx = (mapx * 0.9);
 //  mapy = (mapy * 0.9);
 
@@ -96,11 +96,11 @@ void setDirection(){
   }
   cloudx += (changex * 0.700)*2;
   cloudy += (changey * 0.700)*2;
-
+  
 //  cloudx = (cloudx * 0.9);
 //  cloudy = (cloudy * 0.9);
-//
-
+//  
+  
   noiseSeed(SEED4);
   if(haveWind){
   cloud2x += (noise(csx) - .5);
@@ -108,18 +108,18 @@ void setDirection(){
   }
   cloud2x += (changex * 0.600)*2;
   cloud2y += (changey * 0.600)*2;
-
+  
 //  cloud2x = (cloudx * 0.9);
 //  cloud2y = (cloudy * 0.9);
-
+    
   // cs = cloudSpeed
   csx += 0.01;
   csy -= 0.02;
-
+  
   changex = (changex * 0.8);
   changey = (changey * 0.8);
 
-
+  
 }
 
 void drawMap( int pixelSize, float x, float y, float noiseScale){
@@ -128,7 +128,7 @@ void drawMap( int pixelSize, float x, float y, float noiseScale){
     for (int j = 0; j < height; j += pixelSize) {
       float noiseVal = noise(pixelSize*i*noiseScale+x, pixelSize*j*noiseScale + y);
       color colour = pickColour(i, j, noiseVal-.1);
-      drawMapPoint(colour, i, j, pixelSize);
+      drawMapPoint(colour, i, j, pixelSize);       
     }
   }
 }
@@ -139,7 +139,7 @@ void drawFirstClouds(int pixelSize, float x, float y, float noiseScale){
   for (int i = 0; i < width; i += pixelSize) {
     for (int j = 0; j < height; j += pixelSize) {
       float noiseVal = noise(pixelSize * i * noiseScale + x , pixelSize * j * noiseScale + y);
-      drawCloudPoint(i, j, noiseVal - cloudOffset, pixelSize);
+      drawCloudPoint(i, j, noiseVal - cloudOffset, pixelSize);     
     }
   }
 }
@@ -150,7 +150,7 @@ void drawSecondClouds(int pixelSize, float x, float y, float noiseScale){
   for (int i = 0; i < width; i += pixelSize) {
     for (int j = 0; j < height; j += pixelSize) {
       float noiseVal = noise(pixelSize * i * noiseScale + x , pixelSize * j * noiseScale + y);
-      drawCloudPoint(i, j, noiseVal - cloudOffset, pixelSize);
+      drawCloudPoint(i, j, noiseVal - cloudOffset, pixelSize);     
     }
   }
 }
@@ -158,22 +158,22 @@ void drawSecondClouds(int pixelSize, float x, float y, float noiseScale){
 void drawCloudPoint(int x, int y, float noiseVal, int pixelSize){
   if(noiseVal > .55){
     fill((noiseVal * 255) + 50, ((noiseVal * 255) + 50)/((.006-(zoom*1.05))*1000));
-    rect(x, y, pixelSize, pixelSize);
+    rect(x, y, pixelSize, pixelSize); 
 
   }
 }
 
 void drawMapPoint(color colour, int x, int y, int pixelSize){
-
+  
        fill(colour);
-   rect(x, y, pixelSize, pixelSize);
+   rect(x, y, pixelSize, pixelSize); 
 }
 boolean up = true;
 float blue = 100;
 color pickColour(int x, int y, float noiseVal){
  if(noiseVal < 0.2){
    //shades of dark blue
-
+   
    return color(0,0, 200);
  }
  else if(noiseVal < 0.3){
@@ -199,6 +199,7 @@ color pickColour(int x, int y, float noiseVal){
   else {
     //white
  return color(255, 255, 255);
- }
+ } 
 
 }
+
