@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 body{
-    background-image: url("http://www.photographyblogger.net/wp-content/uploads/2012/04/photo-5-1.jpg");
+    background-image: url("../img/background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
