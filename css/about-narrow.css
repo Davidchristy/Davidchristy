@@ -1,0 +1,16 @@
+/*The CSS for the About me page*/
+#detailed_about_info{
+    text-align: center;
+    padding: 1em;
+
+}
+#detailed_about_info .aboutMe{
+    width: 100%;
+    display: inline-block;
+    vertical-align:top;
+    padding-bottom: 2em;
+}
+
+#detailed_about_info .aboutMe:last-child {
+    padding-bottom: 0;
+}
