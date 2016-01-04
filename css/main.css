@@ -104,8 +104,13 @@ body{
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    background-size: cover;
 }
+
+.mobile{
+    background-image: none;
+}
+
+
 
 header{
     text-align: center;

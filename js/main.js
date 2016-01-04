@@ -161,11 +161,13 @@ $(document).ready(function() {
 function adjustStyle(width) {
     width = parseInt(width);
     if (width < 701) {
+        $("body").addClass("mobile")
         $("#size-home-stylesheet").attr("href", "css/home-narrow.css");
         $("#size-about-stylesheet").attr("href", "css/about-narrow.css");
         $("#size-contact-stylesheet").attr("href", "css/contact-narrow.css");
         $("#size-projects-stylesheet").attr("href", "css/projects-narrow.css");
     } else {
+        $("body").removeClass("mobile")
         $("#size-home-stylesheet").attr("href", "css/home-wide.css");
         $("#size-about-stylesheet").attr("href", "css/about-wide.css");
         $("#size-contact-stylesheet").attr("href", "css/contact-wide.css");
