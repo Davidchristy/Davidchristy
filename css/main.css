@@ -95,6 +95,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
 body{
     background-image: url("../img/background.jpg");
     background-position: center center;
@@ -109,128 +111,21 @@ header{
     text-align: center;
 }
 
-/*The home page css*/
-.home{
-    margin-top: 25%;
-    transition: .5s;
-}
 
-.home ul li{
-    list-style: none;
-    display: inline;
-    padding: 2%;
-    margin: 3em;
-    border-radius: 25px;
-
-    background-color: silver;
-}
-.home .homeLink{
-    display: none;
-}
-
-.home .active {
-    background-color: deepskyblue;
-    box-shadow: -2px -2px 40px rgba(0,191,255,1);
-    box-shadow: 2px 2px 40px rgba(0,191,255,1);
-    padding: 2.5%;
-    font-weight: bold;
-}
-
-.home .inactive {
-    opacity: .2;
-    transition: .5s;
-    background-color: silver;
-}
-
-
-/*the detailed page mnu css is below*/
-.detailed{
-    /*margin-top: 1%;*/
-    width: 100%;
-    transition: .5s;
-}
-
-.detailed ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: silver;
-}
-
-.detailed ul li{
-    font-size: larger;
-    background-color: #b6b6b6;
-    display: inline-block;
-    text-align: center;
-    padding: 1em 7%;
-    text-decoration: none;
-}
-
-.detailed .active {
-    background-color: deepskyblue;
-}
 
 
 /*The CSS for the main body of the page*/
 
 .main{
     width: 95%;
+    /*min-height: 70%;*/
+    margin-bottom: 1em;
+    padding-bottom: 1em;
     margin-left:auto;
     margin-right:auto;
     background-color: white;
-}
-
-
-/*CSS for products page*/
-#detailed_project_info .row{
-    display: table-row;
-}
-
-#detailed_project_info .rowGroup{
-    border-bottom: dashed;
-    border-bottom-color: silver;
-    width: 95%;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#detailed_project_info .row div{
-    width: 50%;
-    display: table-cell;
-}
-
-#detailed_project_info img{
-    width: 75%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-left: 2em;
-}
-
-/*The CSS for the Contact page*/
-#detailed_contact{
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
 }
-
-
-/*The CSS for the About me page*/
-#detailed_about_info{
-    text-align: center;
-    padding: 1em;
-
-}
-#detailed_about_info div:hover{
-    font-size: large;
-    font-weight: bold;
-}
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

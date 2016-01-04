@@ -78,8 +78,6 @@ $(document).ready(function() {
         $("projects").addClass("hidden");
         $("contact").addClass("hidden");
         $("about").addClass("hidden");
-
-
     })
 
     $(".aboutLink").click(function(){
