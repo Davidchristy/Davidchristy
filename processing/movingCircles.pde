@@ -29,6 +29,24 @@ class myCircle{
 
 }
 
+
+void keyPressed(){
+  if(key == CODED){
+    if (keyCode == UP){
+      numberOfCirlces += 1;
+    }
+    if(keyCode == DOWN){
+      numberOfCirlces -= 1;
+    }
+    if(keyCode == LEFT){
+      gravity -= 1;
+    }
+    if(keyCode == RIGHT){
+      gravity += 1;
+    }
+  }
+}
+
 myCircle[] circles = new myCircle[numberOfCirlces];
 
 void setup(){
