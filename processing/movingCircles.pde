@@ -33,7 +33,7 @@ class myCircle{
 void keyPressed(){
   if(key == CODED){
     if (keyCode == UP){
-      if(numberOfCirlces>circles.size()){
+      if(numberOfCirlces>=circles.length()){
         myCircle[] tempCircles = new myCircle[numberOfCirlces];
         for(int i = 0; i < numberOfCirlces + 1; i++){
           tempCircles[i] = new myCircle((int)random(width),(int)random(height));
