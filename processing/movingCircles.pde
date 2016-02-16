@@ -33,16 +33,25 @@ class myCircle{
 void keyPressed(){
   if(key == CODED){
     if (keyCode == UP){
+      if(numberOfCirlces>circles.size()){
+        myCircle[] tempCircles = new myCircle[numberOfCirlces];
+        for(int i = 0; i < numberOfCirlces + 1; i++){
+          tempCircles[i] = new myCircle((int)random(width),(int)random(height));
+        }
+      circles = tempCircles;
+      }
+
       numberOfCirlces += 1;
+      
     }
     if(keyCode == DOWN){
       numberOfCirlces -= 1;
     }
     if(keyCode == LEFT){
-      gravity -= 1;
+      gravity -= .1;
     }
     if(keyCode == RIGHT){
-      gravity += 1;
+      gravity += .1;
     }
   }
 }
