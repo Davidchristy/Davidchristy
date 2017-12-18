@@ -2,132 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d62455f6-b428-4569-986c-ea94edf759bf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/.name" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/PersonalSite.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/dictionaries/david.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/LICENSE.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/about.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/apple-touch-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/browserconfig.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/crossdomain.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/about-narrow.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/about-wide.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/about.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/contact-narrow.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/contact-wide.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/contact.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/home-narrow.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/home-wide.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/home.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/main.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/normalize.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/products.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/projects-narrow.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/css/projects-wide.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/TOC.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/css.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/extend.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/faq.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/html.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/js.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/misc.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/doc/usage.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/humans.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/BrightOnMac.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/Clouds.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/MovingCirlces.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/ecmNew.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/ecmOnMac.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/img/gameOfLife.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/Formstone/background.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/Formstone/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/Formstone/transition.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/plugins.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/processing.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/vendor/jquery-1.11.2.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/js/vendor/modernizr-2.8.3.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/clouds.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/clouds.pde" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/gameOfLife.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/gameOfLife.pde" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/movingCircles.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/processing/movingCircles.pde" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/projects.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/robots.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/tile-wide.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/College/tile.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/popuo-box.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/10.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/11.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/12.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/13.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/14.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/16.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/17.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/18.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/19.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/21.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/22.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/23.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/24.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/3 - Copy.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/7.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/8.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/9.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/a.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/arr.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/arrow.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/b.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/banner.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/c.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/d.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/dribble.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/e.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/f.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/facebook.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/g.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/google.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/heart.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/image-sprite1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/img-sprite.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/k.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/l.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/left.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/m.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/menu.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/right.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/social-icons.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/underline.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/underline2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/underline3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/circles.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/easing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.magnific-popup.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/jquery.mixitup.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/modernizr.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/move-top.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/responsiveslides.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/w3layouts-License.txt" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -144,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+            <state relative-caret-position="550">
+              <caret line="316" column="120" lean-forward="false" selection-start-line="316" selection-start-column="120" selection-end-line="316" selection-end-column="120" />
               <folding>
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -158,7 +34,7 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10925">
+            <state relative-caret-position="459">
               <caret line="437" column="19" lean-forward="false" selection-start-line="437" selection-start-column="19" selection-end-line="437" selection-end-column="19" />
               <folding />
             </state>
@@ -239,11 +115,6 @@
               <item name="Davidchristy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Davidchristy.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Davidchristy.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Davidchristy.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -281,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1513620756244</updated>
       <workItem from="1513620760181" duration="12998000" />
-      <workItem from="1513639718418" duration="196000" />
+      <workItem from="1513639718418" duration="1173000" />
     </task>
     <task id="LOCAL-00001" summary="Adding new website initial commit">
       <created>1513639767956</created>
@@ -290,16 +161,24 @@
       <option name="project" value="LOCAL" />
       <updated>1513639767956</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding new website initial commit">
+      <created>1513639993510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1513639993510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13194000" />
+    <option name="totallyTimeSpent" value="14171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -371,7 +250,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10925">
+        <state relative-caret-position="459">
           <caret line="437" column="19" lean-forward="false" selection-start-line="437" selection-start-column="19" selection-end-line="437" selection-end-column="19" />
           <folding />
         </state>
@@ -379,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="293" column="0" lean-forward="false" selection-start-line="293" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+        <state relative-caret-position="550">
+          <caret line="316" column="120" lean-forward="false" selection-start-line="316" selection-start-column="120" selection-end-line="316" selection-end-column="120" />
           <folding>
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
