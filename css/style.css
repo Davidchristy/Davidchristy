@@ -218,7 +218,7 @@ display: block;
 }
 /*-- //effect --*/
 /*-- our-services --*/
-.our-services {
+.my-skills {
     background: #000000;
 	padding:110px 0;
 	}
@@ -296,7 +296,7 @@ span.highlight{
 	font-size: 16px;
 	}
 /*-- about-us --*/
-.about-us{
+.about-me{
 	background:#FFFFFF;
 	padding: 90px 0;
 	}
@@ -557,14 +557,14 @@ ul.social li{
 	font-size: 1em;
 }
 ul.social li span{
-	background: url(../images/img-sprite.png)no-repeat 0px 0px;
+	/*background: url(../images/img-sprite.png)no-repeat 0px 0px;*/
 	width: 45px;
 	height: 41px;
 	display: block;
 	margin: 0 auto;
 }
 ul.social li span.text{
-	background: url(../images/img-sprite.png)no-repeat -44px 0px;
+	/*background: url(../images/img-sprite.png)no-repeat -44px 0px;*/
 	width: 45px;
 	height: 41px;
 	display: block;
@@ -574,9 +574,9 @@ ul.social li span.text{
 	display: none;
 	position: absolute;
 	top: 0;
-	background: rgba(153, 204, 51, 0.5);
+	/*background: rgba(153, 204, 51, 0.5);*/
 	width: 100%;
-	border: 11px solid rgba(153, 204, 51, 0.67);
+	/*border: 11px solid rgba(153, 204, 51, 0.67);*/
 	min-height: 259px;
 }
 .one{
@@ -615,8 +615,8 @@ ul.social li span.text{
 .port-grid:nth-child(4) {
 	margin-right:0;
 }
-/*----- our-works ------*/
-.our-works {
+/*----- my-works ------*/
+.my-works {
 	padding:90px 0;
 	}
 .our-work-info h2{
@@ -919,8 +919,8 @@ ul.social li span.text{
 	font-size:16px;
 	margin:10px 0 0 0;
 	}
-/*-- our-blog --*/
-.our-blog {
+/*-- my-history --*/
+.my-history {
 	padding: 90px 0;
 	}
 .our-blog-info h2{
@@ -1736,7 +1736,7 @@ ul.social-slide li i.mac{
 	.nav-left {
 		width: 10%;
 		}
-	.our-services {
+	.my-skills {
 		padding: 93px 0;
 		}
 	.our-info h2 {
@@ -1999,7 +1999,7 @@ ul.social-slide li i.mac{
 	.nav-right ul li a {
 		margin: 25px 0px;
 		}
-	.our-services {
+	.my-skills {
 		padding: 75px 0;
 		}
 	.our-grid {
@@ -2769,7 +2769,7 @@ ul.social-slide li i.mac{
 		margin: 15px 0 0 0;
 		font-size: 18px;
 		}
-	.about-us{
+	.about-me{
 		padding-bottom:0;
 		}
 	#filters {
