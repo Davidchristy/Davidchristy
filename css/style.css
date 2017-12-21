@@ -15,10 +15,10 @@ body{
 	-o-background-size: cover;
 	-ms-background-size: cover;
 	-moz-background-size: cover;
-	min-height:840px;
+	min-height:640px;
 	}
 .banner-info{
-margin-top:266px;
+margin-top:166px;
 }
 .banner-info h1{
 	color: #ffffff;
@@ -143,6 +143,7 @@ span.colon{
 	left:0;
 	z-index:9999;
 }
+
 /*-- //fixed-header --*/
 .nav-left{
 	background:#000000;
@@ -157,7 +158,7 @@ span.colon{
 /*-- //menu --*/
 .nav-right{
 	float:right;
-	width:52%
+	width:60%
 	}
 .nav-right ul{
 	padding:0;
@@ -299,7 +300,11 @@ span.highlight{
 .about-me{
 	background:#FFFFFF;
 	padding: 90px 0;
+	padding-top: 30px;
 	}
+.about-top{
+	padding-top: 90px;
+}
 .about-info h2{
 	margin:0;
 	padding:0;
@@ -1010,9 +1015,19 @@ ul.social li span.text{
 	left: 49.2%;
 	border-radius: 15px;
 	}
+.dot-2 p{
+	position: absolute;
+	background: #99cc33;
+	margin: 0;
+	padding: 9px;
+	top: 15%;
+	left: 49.2%;
+	border-radius: 15px;
+}
+
 .top{
 	position: absolute;
-	top: 10%;
+	top: 15%;
 	left: 55%;
 	}
 .mid{
@@ -1030,10 +1045,17 @@ ul.social li span.text{
 	position: absolute;
 	top: 44%;
 	left: 54.9%;
-	}
+}
+
+.arr-left2{
+	position: absolute;
+	top: 80%;
+	left: 54.9%;
+}
+
 .arr-right{
 	position: absolute;
-	top: 64%;
+	top: 70%;
 	left: 43.8%;
 	}
 .arr-mid{
@@ -1056,7 +1078,7 @@ ul.social li span.text{
 	background: #99cc33;
 	margin: 0;
 	padding: 9px;
-	top: 64%;
+	top: 80%;
 	left: 49.2%;
 	border-radius: 15px;
 	}
@@ -1146,8 +1168,8 @@ ul.social li span.text{
 	display: block;
 	font-weight: 500;
 	}
-/*-- twitt-slider --*/
-.twitt-slider{
+/*-- client-slider --*/
+.client-slider{
 	background: url("../images/11.jpg") no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
@@ -1155,21 +1177,21 @@ ul.social li span.text{
 	-ms-background-size: cover;
 	-moz-background-size: cover;
 	min-height:428px;
-	padding: 75px 0;
+	padding: 50px 0;
 	}
-.twitt-info {
+.client-info {
 	text-align: center;
 	}
-.twitt-info p {
+.client-info p {
 	color: #ffffff;
 	font-size: 16px;
 	margin: 65px auto 96px auto;
 	width: 69%;
 	}
-.twitt-info img{
-	width:6% !important;
+.client-info img{
+	width:12% !important;
 	}
-.twitt-info h3{
+.client-info h3{
 	margin:0;
 	font-size:20px;
 	color:#ffffff;
@@ -1213,7 +1235,7 @@ ul.social li span.text{
 	height:390px;
 	position:relative;
 	}
-.contact-us{
+.contact-me{
 	background: url(../images/10.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size: cover;
@@ -1233,23 +1255,24 @@ ul.social li span.text{
 	text-decoration:none;
 	}
 .point-icon{
-	background: url("../images/icons.png") no-repeat -207px 0px;
-	width: 31px;
-	height: 44px;
+	/*background: url("../images/icons.png") no-repeat -207px 0px;*/
+	background: url("../images/GitHub-Mark.png") no-repeat;
+	width: 64px;
+	height: 64px;
 	display: block;
 	margin: 0 auto 20px auto;
 	}
 .mail-icon{
-	background: url("../images/icons.png") no-repeat -73px 0px;
-	width: 45px;
-	height: 39px;
+	background: url("../images/mail-small.png") no-repeat ;
+	width: 64px;
+	height: 64px;
 	display: block;
 	margin: 0 auto 20px auto;
 	}
-.phone-icon{
-	background: url("../images/icons.png") no-repeat 0px 0px;
-	width: 36px;
-	height: 36px;
+.quora-icon{
+	background: url("../images/quora-logo-small.png") no-repeat;
+	width: 64px;
+	height: 64px;
 	display: block;
 	margin: 0 auto 20px auto;
 	}
@@ -2283,10 +2306,10 @@ ul.social-slide li i.mac{
 		top: 72%;
 		left: 44%;
 		}
-	.twitt-slider {
+	.client-slider {
 		min-height: 414px;
 		}
-	.twitt-info p {
+	.client-info p {
 		margin: 65px auto 96px auto;
 		width:84%;
 		}
@@ -2628,7 +2651,7 @@ ul.social-slide li i.mac{
 	.dot-gray p {
 		left: 48.3%;
 		}
-	.twitt-info p {
+	.client-info p {
 		overflow: hidden;
 		height: 45px;
 		}
@@ -2642,10 +2665,10 @@ ul.social-slide li i.mac{
 		top: 72%;
 		left: 42%;
 		}
-	.twitt-info p {
+	.client-info p {
 		margin: 49px auto 83px auto;
 		}
-	.twitt-slider {
+	.client-slider {
 		min-height:304px;
 		background: url("../images/11.jpg") no-repeat -128px 0px;
 		padding: 65px 0;
@@ -2913,7 +2936,7 @@ ul.social-slide li i.mac{
 	.mid {
 		left: 53.7%;
 		}
-	.twitt-info img {
+	.client-info img {
 		width: 12% !important;
 		}
 	.map iframe {
@@ -3245,16 +3268,16 @@ ul.social-slide li i.mac{
 	.august:nth-child(5){
 		margin-bottom: 38px;
 		}
-	.twitt-info img {
+	.client-info img {
 			width: 25% !important;
 			}
-	.twitt-info p{
+	.client-info p{
 			width:99%;
 			}
 	ul.callbacks_tabs.callbacks2_tabs{
 			left:31%;
 			}
-	.twitt-info h3 {
+	.client-info h3 {
 			font-size: 15px;
 			}
 	.get-info p {
@@ -3276,7 +3299,7 @@ ul.social-slide li i.mac{
 	.mail-icon {
 			margin: 0 auto 10px auto;
 			}
-	.phone-icon {
+	.quora-icon {
 			margin: 0 auto 10px auto;
 			}
 	.contact-info input[type="text"] {

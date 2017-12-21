@@ -44,35 +44,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="banner-info">
 			<h1><span class="colon">D</span>avid <span class="colon">C</span>hristy</h1>
 			<p>Programmer<br>Business Professional</p>
-			<div class="view"><a href="#">View Portfolio</a></div>
+			<div class="view"><a href="#my-works">View Portfolio</a></div>
 		</div>
-		<!--<div class="banner-grids">-->
-			<!--<div class="col-md-4 banner-grid text-center">-->
-				<!--<div class="banner-left">-->
-					<!--<ul>-->
-						<!--<li><label> </label></li>-->
-						<!--<li>Have a question? Call us now<span>+62 146 212 84</span> </li>-->
-					<!--</ul>-->
-				<!--</div>-->
-			<!--</div>-->
-			<!--<div class="col-md-4 banner-grid text-center">-->
-				<!--<div class="banner-middle">-->
-					<!--<ul>-->
-						<!--<li><label> </label></li>-->
-						<!--<li>We are open Mon-Fri<span>Mon - Fri 08:00 - 17:00</span> </li>-->
-					<!--</ul>-->
-				<!--</div>-->
-			<!--</div>-->
-			<!--<div class="col-md-4 banner-grid text-center">-->
-				<!--<div class="banner-right">-->
-					<!--<ul>-->
-						<!--<li><label> </label></li>-->
-						<!--<li>Need support? Drop us an email<span><a href="mail-to:sample@example.com">Support@yoursite.com</a></span></li>-->
-					<!--</ul>-->
-				<!--</div>-->
-			<!--</div>-->
-			<!--<div class="clearfix"></div>-->
-		<!--</div>-->
 	</div>
 </div>
 <!-- //banner -->
@@ -88,9 +61,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<nav class="cl-effect-1">
 						<ul class="nav1">
 							<li><a class="scroll" href="#home">Home</a></li>
-							<li><a class="scroll" href="#about-me">About us</a></li>
-							<li><a class="scroll" href="#pricing-table">Products</a></li>
-							<li><a class="scroll" href="#our-team">Testimonials</a></li>
+							<li><a class="scroll" href="#about-me">About</a></li>
+                            <li><a class="scroll" href="#my-skills">Skills</a></li>
+                            <li><a class="scroll" href="#my-works">Profile</a></li>
+                            <li><a class="scroll" href="#my-history">History</a></li>
 							<li><a class="scroll" href="#get-in-touch">Contact</a></li>
 						</ul>
 					</nav>
@@ -111,9 +85,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							 $(window).scroll(function(){
 								var scrollpos=$(window).scrollTop(); 
 								if(scrollpos >=navoffeset){
-									$(".navigation").addClass("fixed");
+                                    $(".navigation").addClass("fixed");
+                                    $(".about-me").addClass("about-top");
 								}else{
-									$(".navigation").removeClass("fixed");
+                                    $(".navigation").removeClass("fixed");
+                                    $(".about-me").removeClass("about-top");
 								}
 							 });
 							 
@@ -243,7 +219,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //about-bottom -->
 <!-- my-skill -->
-<div class="my-skills">
+<div id="my-skills" class="my-skills">
 	<div class="container">
 		<div class="our-info text-center">
 			<h2><span class="highlight">SKILLS</span></h2>
@@ -750,7 +726,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </div>
 <!-- //my-works -->
 <!-- slider -->
-	<div class="slider">
+<div class="slider">
 		<div class="container">
             <!-- responsiveslides -->
                 <script src="js/responsiveslides.min.js"></script>
@@ -791,19 +767,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="clearfix"></div>
                         </div>
                     </li>
-                    <!--<li>-->
-                        <!--<div class="slider-info">-->
-                            <!--<div class="col-md-3 slider-left text-center">-->
-                                <!--<img src="images/22.png" alt=" " />-->
-                            <!--</div>-->
-                            <!--<div class="col-md-9 slider-right">-->
-                                <!--<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in -->
-                                <!--a piece of classical Latin literature from 45 BC, making years old</p>-->
-                                <!--<p><i><span class="highlight">Kimberly Thompson</span><span class="yellow"> - Managing Director of Nokia</span></i></p>-->
-                            <!--</div>-->
-                            <!--<div class="clearfix"></div>-->
-                        <!--</div>-->
-                    <!--</li>-->
+                    <li>
+                        <div class="slider-info">
+                            <div class="col-md-3 slider-left text-center">
+                                <img src="images/people/star-wars-profile.jpg" alt=" " />
+                            </div>
+                            <div class="col-md-9 slider-right">
+                                <p>“I received mentor ship from David during the course of my internship. David is a
+                                    programmer that you don’t come across often: he is an effective teacher that
+                                    clearly cares about his mentees and is able to effectively communicate complex
+                                    concepts. I think he is a kind, intelligent, and respectful person."</p>
+                                <p><i><span class="highlight">Katie McCready</span><span class="yellow">
+                                    - ISTA Senior </span></i></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
                     <!--<li>-->
                         <!--<div class="slider-info">-->
                             <!--<div class="col-md-3 slider-left text-center">-->
@@ -836,7 +815,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 <!-- //slider -->
 <!-- my-history -->
-<div class="my-history">
+<div id="my-history" class="my-history">
 	<div class="container">
 		<div class="my-history-info text-center">
 			<h2>MY <span class="highlight">HISTORY</span></h2>
@@ -857,115 +836,68 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h4>Refocus, Recenter</h4>
 							<p>November, 2017</p>
 						</div>
-						<div class="clearfix"></div>
-					</div>
+                        <div class="clearfix"></div>
+                    </div>
                     <p>It was with a heavy heart and lots of thought that I decided to switch from running my own
                         business, to working for another. I loved running my own business and would have loved to
                         continue, but I wasn't loving the front-end website development I was doing everyday for it.</p>
                     <p>In order to pursue more complex coding problems and higher level challenges I'm moving most of
                         my clients to other local developers and not taking any more contracts. </p>
                     <p>It's with this clean slate that I'm moving looking forward to find what is out there for me. </p>
-				</div>
-				<div class="blog-txt">
-					<h4>Tempor vestibulum turpis</h4>
-					<p>Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam 
-					dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum archu praesent, pede etiam. Tempor
-					vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio.</p>
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>August 24, 2014</p>
-						</div>
-						<div class="caption-right">
-							<label>40</label>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
+                </div>
 			</div>
 			<div class="blog-right">
 				<div class="blog-txt">
-					<h4>Tempor vestibulum turpis</h4>
-					<p>Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam 
-					dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum archu praesent, pede etiam. Tempor
-					vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio.</p>
+					<h4>TVAC</h4>
 					<div class="caption-text">
 						<div class="caption-left">
-							<p>August 24, 2014</p>
-						</div>
-						<div class="caption-right">
-							<label>40</label>
+							<p>October, 2017</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
+                    <p>I consulted with NASA working on a vacuum system thermally controlled. Wrote the bulk
+                        of the code and managed a small team to complete strict deadline.</p>
 				</div>
-				<div class="blog-img">
-					<img src="images/17.jpg" alt=" "/>
-					<div class="desc">
-						<div class="desc-left">
-							<h4>Image Post</h4>
-							<p>August 24, 2014</p>
-						</div>
-						<div class="desc-right">
-							<label>40</label>
-						</div>
-						<div class="clearfix"></div>
-					</div>
+                <div class="blog-txt">
+                    <h4>Started re-write of Simprily's input processor</h4>
+                    <div class="caption-text">
+                        <div class="caption-left">
+                            <p>May, 2017</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <p>While I've been helping on this project for some time, this is when I started a re-write of a
+                        larger section of the code. This was also the start of me mentoring ISTA students working on
+                        this project.</p>
+                </div>
+                <div class="blog-txt">
+                    <h4>Started Brazilian Jiu-Jitsu</h4>
+                    <div class="caption-text">
+                        <div class="caption-left">
+                            <p>March, 2017</p>
+                        </div>
+                    <div class="clearfix"></div>
+                </div>
+                    <p>All work and no play makes Jack a dull boy. To start getting back in motion I started doing BJJ
+                    and have loved it ever since.</p>
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="dot-top"><p></p></div>
+            <div class="dot-top"><p></p></div>
+            <div class="dot-2"><p></p></div>
 			<div class="dot-mid"><p></p></div>
 			<div class="dot-bottom"><p></p></div>
-			<div class="dot-gray"><p></p></div>
 			<div class="top"><img src="images/left.png" alt=" "/></div>
 			<div class="bottom"><img src="images/right.png" alt=" "/></div>
-			<div class="mid"><img src="images/left.png" alt=" "/></div>
 			<div class="arr-left"><img src="images/left.png" alt=" "/></div>
-			<div class="arr-right"><img src="images/right.png" alt=" "/></div>
-			<div class="arr-mid"><img src="images/right.png" alt=" "/></div>
+			<div class="arr-left2"><img src="images/left.png" alt=" "/></div>
 		</div>
-		<div class="august">f</div>
-		<div class="blog-grids">
-			<div class="blog-left">
-				<div class="blog-img">
-					<img src="images/18.jpg" alt=" "/>
-					<div class="desc">
-						<div class="desc-left">
-							<h4>Image Post</h4>
-							<p>August 24, 2014</p>
-						</div>
-						<div class="desc-right">
-							<label>40</label>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="blog-right">
-				<div class="blog-txt">
-					<h4>Tempor vestibulum turpis</h4>
-					<p>Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam 
-					dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum archu praesent, pede etiam. Tempor
-					vestibulum turpis id ligula mi mattis. Eget arcu vitae mauris amet odio.</p>
-					<div class="caption-text">
-						<div class="caption-left">
-							<p>August 24, 2014</p>
-						</div>
-						<div class="caption-right">
-							<label>40</label>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-		<div class="button"><a href="#">Load More</a></div>
+		<div class="button"><a href="https://www.linkedin.com/in/david-christy/">View More on LinkedIn</a></div>
 	</div>
 </div>
 <!-- //my-history -->
-<!-- twitt-slider -->
-<div class="twitt-slider">
+<!-- client-slider -->
+<div class="client-slider">
 	<div class="container">
 		<!-- responsiveslides -->
 					<script src="js/responsiveslides.min.js"></script>
@@ -977,7 +909,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								auto: true,
 								pager: true,
 								nav: false,
-								speed: 500,
+								speed: 1000,
 								namespace: "callbacks",
 								before: function () {
 							$('.events').append("<li>before event fired.</li>");
@@ -992,35 +924,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div  id="top" class="callbacks_container">
 					<ul class="rslides" id="slider4">
 						<li>
-							<div class="twitt-info">
-								<img src="images/14.png" alt=" "/>
-								<p>Premium Template- orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat 
-								vestibulum sit feugiat, voluptates dui eros libero...</p>
-								<h3>Follow us on Twitter : <span class="highlight">@rudhisasmito</span></h3>
+							<div class="client-info">
+								<img src="images/clients/NASA_logo.png" alt=" "/>
+								<p>One of my consulting jobs I did was working a satellite testing unit made to reproduce
+                                    temperatures under extreme low pressures. </p>
 							</div>
 						</li>
 						<li>
-							<div class="twitt-info">
-								<img src="images/dribble.png" alt=" "/>
-								<p>Porttitor bibendum facilisi suspendisse Lorem ipsum dolor amet, libero turpis non 
-								cras ligula, id commodo, aenean est in volutpat amet sodales </p>	
-								<h3>Follow us on Dribble : <span class="highlight">@rudhisasmito</span></h3>
+							<div class="client-info">
+								<img src="images/clients/ASU_logo.png" alt=" "/>
+								<p>I worked with a research lab in ASU Reseach park to make a dangerous gas remote
+                                    monitoring system. Allowing it to be viewed anywhere on the local network in the
+                                    building.</p>
 							</div>
 						</li>
 						<li>
-							<div class="twitt-info">
-								<img src="images/google.png" alt=" "/>
-								<p>Libero turpis non cras ligula,Lorem ipsum dolor amet,  id commodo, aenean est in 
-									volutpat amet sodales, porttitor bibendum facilisi suspendisse </p>	
-								<h3>Follow us on Google : <span class="highlight">@rudhisasmito</span></h3>
+							<div class="client-info">
+								<img src="images/clients/TUSD_logo.png" alt=" "/>
+								<p>I worked with the Alumni Foundation of University High School, TUSD. Updating their
+                                    website security.</p>
 							</div>
 						</li>
 						<li>
-							<div class="twitt-info">
-								<img src="images/facebook.png" alt=" "/>
-								<p>Aenean est in volutpat amet sodalesLibero turpis non cras ligula,Lorem ipsum dolor 
-								amet,  id commodo, porttitor bibendum facilisi suspendisse </p>	
-								<h3>Follow us on Facebook : <span class="highlight">@rudhisasmito</span></h3>
+							<div class="client-info">
+								<img src="images/clients/Arizona_logo.png" alt=" "/>
+								<p>I've been hired for many different roles throughout my time at the University of
+                                    Arizona, working both in IT and Teaching roles.</p>
 							</div>
 						</li>
 					</ul>
@@ -1030,57 +959,59 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	
 	</div>
 </div>
-<!-- //twitt-slider -->
+<!-- //client-slider -->
 <!-- get-in -->
 <div id="get-in-touch" class="get-in-touch">
 	<div class="container">
 		<div class="get-info text-center">
 			<h2><span class="highlight">GET IN</span> TOUCH</h2>
-			<h3><i>Feel Free To Contact Us</i></h3>
+			<h3><i>Feel Free To Contact Me</i></h3>
 			<div class="underline">
 				<img src="images/underline.png" alt=" "/>
 			</div>
-			<p>Lorem ipsum dolor amet, libero turpis non cras ligula, id commodo, aenean est in volutpat amet sodales, porttitor bibendum facilisi suspendisse</p>
+			<p>I always like hearing from new people, feel free to shoot me a message below, or send it to the
+                email below.</p>
 		</div>
-	</div>
-	<div class="map">
-		<div class="nav-icon">
-			<img src="images/9.png" alt=" "/>
-		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819" frameborder="0" style="border:0"></iframe>
 	</div>
 </div>
 <!-- //get-in -->
-<!-- contact-us -->
-<div class="contact-us">
+<!-- contact-me -->
+<div class="contact-me">
 	<div class="container">
 		<div class="contact-grids">
 			<div class="col-md-4 contact-grid text-center">
-				<div class="point-icon"></div>
-				<p>Jl. Pahlawan VII No.247-D Sidoarjo-Surabaya-Indonesia</p>
+                <a href="https://github.com/Davidchristy/">
+                    <div class="point-icon"></div>
+                    <p>Github</p>
+                </a>
 			</div>
 			<div class="col-md-4 contact-grid text-center">
-				<div class="mail-icon"></div>
-				<p><a href="mail-to:sample@example.com">rudhisasmito@gmail.com</a></p>
+                <a href="mail-to:davidchristy520@gmail.com">
+                    <div class="mail-icon"></div>
+                    <p>DavidChristy520@gmail.com</p>
+                </a>
 			</div>
 			<div class="col-md-4 contact-grid text-center">
-				<div class="phone-icon"></div>
-				<p>+613 0000 0000</p>
+                <a href="https://www.quora.com/profile/David-Christy-4">
+                    <div class="quora-icon"></div>
+                    <p>Quora</p>
+                </a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 		<div class="contact-info">
-			<form>
-				<input type="text" placeholder="Your Name" required>
-				<input type="text" placeholder="Your E-Mail" required>
-				<input type="text" placeholder="Subject" required>
-				<textarea placeholder="Your Message" required></textarea>
+			<form method="POST" action="https://formspree.io/davidchristy520@gmail.com">
+				<input type="text" name="name" placeholder ="Your Name" required>
+				<input type="text" name="_replyto" placeholder="Your E-Mail" required>
+				<input type="text" name="subject" placeholder="Subject" required>
+				<textarea name="message" placeholder="Your Message" required></textarea>
 				<input type="submit" value="SEND MESSAGE">
+                <input type="text" name="_gotcha" style="display:none" />
 			</form>
 		</div>
 	</div>
 </div>
-<!-- //contact-us -->
+<!-- //contact-me -->
 <!-- footer -->
 <div class="footer">
 	<div class="container">
