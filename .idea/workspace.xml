@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d62455f6-b428-4569-986c-ea94edf759bf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/people/Ben-Garren.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/CS_UA.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/DD2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/Pretty_simplry.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/TVAC_cropped.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/TVAC_cropped2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/UAECM.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/drush.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/hanoi.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/mentor.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/mochlosarch.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/projects/server.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/timeline/sunset.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,10 +20,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="325">
+              <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -217,6 +202,11 @@
               <item name="Davidchristy.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="Davidchristy.github.io" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Davidchristy.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Davidchristy.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -256,7 +246,7 @@
       <updated>1513620756244</updated>
       <workItem from="1513620760181" duration="12998000" />
       <workItem from="1513639718418" duration="31711000" />
-      <workItem from="1513832215067" duration="4748000" />
+      <workItem from="1513832215067" duration="5154000" />
     </task>
     <task id="LOCAL-00001" summary="Adding new website initial commit">
       <created>1513639767956</created>
@@ -286,11 +276,25 @@
       <option name="project" value="LOCAL" />
       <updated>1513798491863</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished up bulk of website">
+      <created>1513837012686</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1513837012687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished up bulk of website">
+      <created>1513837036487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513837036487</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49457000" />
+    <option name="totallyTimeSpent" value="49863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -325,7 +329,8 @@
     <MESSAGE value="Adding new website initial commit" />
     <MESSAGE value="small changes to serices" />
     <MESSAGE value="Changes made to works sections, and starting history section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes made to works sections, and starting history section" />
+    <MESSAGE value="Finished up bulk of website" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished up bulk of website" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -337,7 +342,6 @@
         <state relative-caret-position="25150">
           <caret line="1006" column="38" lean-forward="false" selection-start-line="1006" selection-start-column="28" selection-end-line="1006" selection-end-column="38" />
           <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -429,7 +433,6 @@
         <state relative-caret-position="5975">
           <caret line="287" column="18" lean-forward="true" selection-start-line="287" selection-start-column="18" selection-end-line="287" selection-end-column="18" />
           <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -549,10 +552,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
