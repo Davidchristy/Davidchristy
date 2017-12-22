@@ -44,9 +44,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<div class="banner-info">
 			<h1><span class="colon">D</span>avid <span class="colon">C</span>hristy</h1>
-			<p>Programmer<br>Business Professional</p>
+			<p>Software Engineer<br>Entrepreneur</p>
 			<div class="view"><a href="#my-works">View Portfolio</a></div>
 		</div>
+        <div class="client-list">
+            <div class="row">
+                <div class="col-sm-4 col-md-3 hidden-xs hidden-sm">
+                    <img class="img-responsive " src="images/clients/TUSD_logo.png" />
+                </div>
+                <div class="col-sm-4 col-md-3 hidden-xs ">
+                    <img class="img-responsive" src="images/clients/Arizona_logo.png" />
+                </div>
+                <div class="col-sm-4 col-md-3 hidden-xs col-sm-push-0" >
+                    <img class="img-responsive" src="images/clients/NASA_logo.png" />
+                </div>
+                <div class="col-md-3 col-sm-4 hidden-xs">
+                    <img class="img-responsive" src="images/clients/ASU_logo.png" />
+
+                </div>
+            </div>
+        </div>
 	</div>
 </div>
 <!-- //banner -->
@@ -71,12 +88,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</nav>
 					
 					<!-- script for menu -->
-					<script> 
-						$( "span.menu" ).click(function() {
-						$( "ul.nav1" ).slideToggle( 300, function() {
-						 // Animation complete.
-						});
-						});
+					<script>
+                        $( "span.menu" ).click(function() {
+                            $( "ul.nav1" ).slideToggle( 300, function() {
+                                // Animation complete.
+                            });
+                        });
+                        $( "ul.nav1" ).click(function() {
+                            if($(window).width()<640) {
+                                $("ul.nav1").slideToggle(300, function () {
+                                    // Animation complete.
+                                });
+                            }
+                        });
 					</script>
 					<!-- //script for menu -->
 					<!-- script-for sticky-nav -->
@@ -117,76 +141,78 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 	<div class="about-grids">
-		<div class="col-md-6 about-left">
-            <p>If a job needs done, I'll pick up a book and start learning. With that go-getter attitude I've picked up
-                a number of useful skills that when put together is more than the sum of the apart.</p>
-            <p>I graduated with a bachelors in Computer Science and started running my own business. I focused
-                in website design but did work in SEO, Hosting, CMS security, and more.</p>
-            <p>Throughout college and after graduating I mentored people in everything from digital security, to best
-                practices for building applications</p>
-            <div class="about-right-list">
-                <div class="tab1 wow bounceIn" data-wow-delay="0.4s">
-                    <ul>
-                        <li><span> </span></li>
-                        <li class="text">PROGRAMMING</li>
-                    </ul>
-                    <p>I started programming in high school and haven't stopped. I have worked in a number of
-                        programming languages but focus my work in Python.</p>
-                </div>
-                <div class="tab2 wow bounceIn" data-wow-delay="0.4s">
-                    <ul>
-                        <li><span class="circle"> </span></li>
-                        <li class="text">MANAGING</li>
+        <div class="container">
+            <div class="col-sm-6">
+                <p>If a job needs done, I'll pick up a book and start learning. With that go-getter attitude I've picked up
+                    a number of useful skills that when put together is more than the sum of the apart.</p>
+                <p>I graduated with a bachelors in Computer Science and started running my own business. I focused
+                    in website design but did work in SEO, Hosting, CMS security, and more.</p>
+                <p>Throughout college and after graduating I mentored people in everything from digital security, to best
+                    practices for building applications</p>
+                <div class="about-right-list">
+                    <div class="tab1 wow bounceIn" data-wow-delay="0.4s">
+                        <ul>
+                            <li><span> </span></li>
+                            <li class="text">PROGRAMMING</li>
+                        </ul>
+                        <p>I started programming in high school and haven't stopped. I have worked in a number of
+                            programming languages but focus my work in Python.</p>
+                    </div>
+                    <div class="tab2 wow bounceIn" data-wow-delay="0.4s">
+                        <ul>
+                            <li><span class="circle"> </span></li>
+                            <li class="text">MANAGING</li>
 
-                    </ul>
-                    <p>When I started making website I quickly realized I would need contract workers to help with the
-                        workload. As such I became proficient at how to manage workers and work as "translator" between
-                        different groups</p>
-                </div>
-                <div class="tab3 wow bounceIn" data-wow-delay="0.4s">
-                    <ul>
-                        <li><span class="tv"> </span></li>
-                        <li class="text">MENTORING</li>
+                        </ul>
+                        <p>When I started making websites, I quickly realized I would need contract workers to help with the
+                            workload. As such, I became proficient at how to manage workers and work as "translator" between
+                            different groups.</p>
+                    </div>
+                    <div class="tab3 wow bounceIn" data-wow-delay="0.4s">
+                        <ul>
+                            <li><span class="tv"> </span></li>
+                            <li class="text">MENTORING</li>
 
-                    </ul>
-                    <p>What started out as helping classmates quickly formed into a passion for teaching others. I have
-                        now worked with students from 6th grade to graduate students teaching them math, programming,
-                        and life skills. </p>
+                        </ul>
+                        <p>What started out as helping classmates quickly formed into a passion for teaching others. I have
+                            now worked with students from 6th grade to graduate students teaching them math, programming,
+                            and life skills. </p>
+                    </div>
                 </div>
+                <!-- script for tabs -->
+                <script>
+                    $(document).ready(function(){
+                        $(".tab1 p").hide();
+                        $(".tab2 p").hide();
+                        $(".tab3 p").hide();
+                        $(".tab4 p").hide();
+                        $(".tab1 ul").click(function(){
+                            $(".tab1 p").slideToggle(300);
+                            $(".tab2 p").slideUp(300);
+                            $(".tab3 p").slideUp(300);
+                        })
+                        $(".tab2 ul").click(function(){
+                            $(".tab2 p").slideToggle(300);
+                            $(".tab1 p").slideUp(300);
+                            $(".tab3 p").slideUp(300);
+                        })
+                        $(".tab3 ul").click(function(){
+                            $(".tab3 p").slideToggle(300);
+                            $(".tab2 p").slideUp(300);
+                            $(".tab1 p").slideUp(300);
+                        })
+                    });
+                </script>
+                <!-- script for tabs -->
             </div>
-            <!-- script for tabs -->
-            <script>
-                $(document).ready(function(){
-                    $(".tab1 p").hide();
-                    $(".tab2 p").hide();
-                    $(".tab3 p").hide();
-                    $(".tab4 p").hide();
-                    $(".tab1 ul").click(function(){
-                        $(".tab1 p").slideToggle(300);
-                        $(".tab2 p").slideUp(300);
-                        $(".tab3 p").slideUp(300);
-                    })
-                    $(".tab2 ul").click(function(){
-                        $(".tab2 p").slideToggle(300);
-                        $(".tab1 p").slideUp(300);
-                        $(".tab3 p").slideUp(300);
-                    })
-                    $(".tab3 ul").click(function(){
-                        $(".tab3 p").slideToggle(300);
-                        $(".tab2 p").slideUp(300);
-                        $(".tab1 p").slideUp(300);
-                    })
-                });
-            </script>
-            <!-- script for tabs -->
-		</div>
-		<div class="col-md-6 about-right">
-            <div class="about-image">
-                <img src="images/3.jpg" alt=" "/>
-            </div>
+            <div class="col-sm-6 about-right">
+                <div class="about-image">
+                    <img src="images/3.jpg" alt=" "/>
+                </div>
 
+            </div>
+    		<div class="clearfix"></div>
         </div>
-		<div class="clearfix"></div>
 	</div>
 </div>
 <!-- //about-me -->
@@ -194,22 +220,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="about-bottom">
     <div class="container">
         <div class="bottom-grids">
-            <div class="col-md-3 bottom-grid text-center">
+            <div class="col-sm-3 col-xs-4 text-center">
                 <div class="like"></div>
                 <h2>40+</h2>
                 <p>Projects completed</p>
             </div>
-            <div class="col-md-3 bottom-grid text-center">
+            <div class="col-sm-3 col-xs-4 text-center">
                 <div class="chat"></div>
                 <h2>20,000+</h2>
                 <p>Lines of Code</p>
             </div>
-            <div class="col-md-3 bottom-grid text-center">
+            <div class="col-sm-3 col-xs-4 text-center">
                 <div class="smiley"></div>
                 <h2>54</h2>
                 <p>Quora Answers</p>
             </div>
-            <div class="col-md-3 bottom-grid text-center">
+            <div class="col-sm-3 col-xs-4 text-center hidden-xs">
                 <div class="flag"></div>
                 <h2>500+</h2>
                 <p>People helped</p>
@@ -236,8 +262,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-9 our-grid-right">
 					<h3>Python</h3>
-					<p>With over 4 years experience in python I've written at least 15,000 lines and more than a dozen
-                        projects</p>
+					<p>With over 4 years experience in python, I've written at least 15,000 lines and more than a dozen
+                        projects.</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -247,7 +273,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-9 our-grid-right">
 					<h3>Project Management</h3>
-					<p>As Founder and Owner of my own business I worked on dozens of projects all with unique needs and
+					<p>As Founder and Owner of my own business I worked on dozens of projects, all with unique needs and
                         teams.</p>
 				</div>
 				<div class="clearfix"></div>
@@ -279,8 +305,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-9 our-grid-right">
 					<h3>Consulting</h3>
-					<p>I've stepped into projects half way completed and help the team make the final push to finish
-						the product</p>
+					<p>I've stepped into projects half way completed and helped the team make the final push to finish
+						the product.</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -290,7 +316,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="col-md-9 our-grid-right">
 					<h3>Testing</h3>
-					<p>I've stepped into projects not being thoroughly tested and worked on Unit and project wide tests.</p>
+					<p>I've rescued projects not being thoroughly tested and worked on Unit and project wide tests.</p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -308,8 +334,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="underline">
 				<img src="images/underline.png" alt=" "/>
 			</div>
-			<p>Since the scope of my work is fairly diverse here is a smattering of some interesting projects I've
-				worked on.</p>
+			<p>Since the scope of my work is fairly diverse, here is a smattering of interesting projects that feature
+                my skills.</p>
 		</div>	
 		<div class="portfolio-grid">
 					<ul id="filters">
@@ -739,8 +765,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             auto: true,
                             pager: true,
                             nav: false,
-                            speed: 500,
+                            speed: 1000,
                             namespace: "callbacks",
+                            pause: true,
                             before: function () {
                         $('.events').append("<li>before event fired.</li>");
                         },
@@ -749,6 +776,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             }
                             });
                             });
+                </script>
+                <script>
+                    sliderPaused = false;
+                    $("#slider3").hover(function(){
+                        sliderPaused = true;
+                    }, function(){
+                        sliderPaused = false;
+                    });
                 </script>
             <!-- responsiveslides -->
             <div  id="top" class="callbacks_container">
@@ -784,19 +819,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="clearfix"></div>
                         </div>
                     </li>
-                    <!--<li>-->
-                        <!--<div class="slider-info">-->
-                            <!--<div class="col-md-3 slider-left text-center">-->
-                                <!--<img src="images/23.png" alt=" " />-->
-                            <!--</div>-->
-                            <!--<div class="col-md-9 slider-right">-->
-                                <!--<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque -->
-                                <!--laudantium, totam architecto beatae vitae dicta sunt explicabo</p>-->
-                                <!--<p><i><span class="highlight">Rico Massimo</span><span class="yellow"> - Managing Director of LG</span></i></p>-->
-                            <!--</div>-->
-                            <!--<div class="clearfix"></div>-->
-                        <!--</div>-->
-                    <!--</li>-->
+                    <li>
+                        <div class="slider-info">
+                            <div class="col-md-3 slider-left text-center">
+                                <img src="images/people/star-trek-profile.jpg" alt=" " />
+                            </div>
+                            <div class="col-md-9 slider-right">
+                                <p>"David Christy has provided computer services to me. His work resolved all the issues
+                                    I was experiencing .In addition, he met all deadlines and his ongoing communication
+                                    throughout my project put my mind at ease. I have also observed David’s interactions
+                                    with many types of individuals including those with intellectual disabilities. David
+                                    is always respectful and patient and his ability to work with diverse populations
+                                    would be benefit any organization that was lucky enough to employ him."
+                                </p>
+                                <p><i><span class="highlight">Laura Fairbanks</span><span class="yellow">
+                                    - IT support client</span></i></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
                     <!--<li>-->
                         <!--<div class="slider-info">-->
                             <!--<div class="col-md-3 slider-left text-center">-->
@@ -840,7 +881,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <div class="clearfix"></div>
                     </div>
                     <p>It was with a heavy heart and lots of thought that I decided to switch from running my own
-                        business, to working for another. I loved running my own business and would have loved to
+                        business to working for another. I loved running my own business and would have loved to
                         continue, but I wasn't loving the front-end website development I was doing everyday for it.</p>
                     <p>In order to pursue more complex coding problems and higher level challenges I'm moving most of
                         my clients to other local developers and not taking any more contracts. </p>
@@ -856,8 +897,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class="clearfix"></div>
 					</div>
-                    <p>I consulted with NASA working on a vacuum system thermally controlled. Wrote the bulk
-                        of the code and managed a small team to complete strict deadline.</p>
+                    <p>I consulted with NASA working on a vacuum system thermally controlled, which entailed writing the
+                        bulk of the code and managed a small team to complete strict deadline.</p>
 				</div>
                 <div class="blog-txt">
                     <h4>Started re-write of Simprily's input processor</h4>
@@ -867,7 +908,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <p>While I've been helping on this project for some time, this is when I started a re-write of a
+                    <p>As follow up a project I've been working on, this is when I started a re-write of a
                         larger section of the code. This was also the start of me mentoring ISTA students working on
                         this project.</p>
                 </div>
@@ -879,7 +920,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                     <div class="clearfix"></div>
                 </div>
-                    <p>All work and no play makes Jack a dull boy. To start getting back in motion I started doing BJJ
+                    <p>All work and no play makes Jack a dull boy. To start getting back in motion, I started doing BJJ
                     and have loved it ever since.</p>
 				</div>
 			</div>
@@ -911,6 +952,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								pager: true,
 								nav: false,
 								speed: 1000,
+                                pause: true,
 								namespace: "callbacks",
 								before: function () {
 							$('.events').append("<li>before event fired.</li>");
@@ -970,8 +1012,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="underline">
 				<img src="images/underline.png" alt=" "/>
 			</div>
-			<p>I always like hearing from new people, feel free to shoot me a message below, or send it to the
-                email below.</p>
+			<p>I always like hearing from new people. Feel free to shoot me a message below, check out what I'm doing
+                around the internet.</p>
 		</div>
 	</div>
 </div>
@@ -1017,38 +1059,27 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="footer">
 	<div class="container">
 		<div class="footer-left">
-			<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-		</div>
-		<div class="footer-right">
-			<ul>
-				<li><a class="facebook" href="#"></a></li>
-				<li><a class="twitter" href="#"></a></li>
-				<li><a class="linkedin" href="#"></a></li>
-				<li><a class="pininterest" href="#"></a></li>
-				<li><a class="google" href="#"></a></li>
-				<li><a class="dribble" href="#"></a></li>
-				<li><a class="linkedin" href="#"></a></li>
-			</ul>
+			<p>Template by <a href="http://w3layouts.com/">W3layouts</a> edited by David Christy</p>
 		</div>
 		<div class="clearfix"></div>
 	</div>
 </div>
 <!-- //footer -->
 <!-- smooth scrolling -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-		/*
-			var defaults = {
-			containerID: 'toTop', // fading element id
-			containerHoverID: 'toTopHover', // fading element hover id
-			scrollSpeed: 1200,
-			easingType: 'linear' 
-			};
-		*/								
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		});
-	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script type="text/javascript">
+    $(document).ready(function() {
+    /*
+        var defaults = {
+        containerID: 'toTop', // fading element id
+        containerHoverID: 'toTopHover', // fading element hover id
+        scrollSpeed: 1200,
+        easingType: 'linear'
+        };
+    */
+    $().UItoTop({ easingType: 'easeOutQuart' });
+    });
+</script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //smooth scrolling -->
 </body>
 </html>

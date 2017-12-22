@@ -33,6 +33,21 @@ margin-top:166px;
 	font-size: 32px;
 	text-align: center;
 	}
+
+.client-list{
+	margin-top: 110px;
+}
+
+.client-list img{
+	opacity: 0.5;
+	max-height: 200px;
+	position: absolute;
+	top: 0;
+	width: 70%;
+	bottom: 0;
+	margin: auto;
+	padding: 10px;
+}
 span.colon{
 	color:#99cc33;
 	font-size:68px;
@@ -300,10 +315,10 @@ span.highlight{
 .about-me{
 	background:#FFFFFF;
 	padding: 90px 0;
-	padding-top: 30px;
+	padding-top: 27px;
 	}
 .about-top{
-	padding-top: 90px;
+	padding-top: 100px;
 }
 .about-info h2{
 	margin:0;
@@ -327,6 +342,8 @@ span.highlight{
 
 .about-image img{
 	/*width: 100%;*/
+    max-width:300px;
+    max-width:400px;
 	height: 450px;
 	}
 .about-right p{
@@ -1916,8 +1933,14 @@ ul.social-slide li i.mac{
 		left: 56%;
 		}
 	.dot-top p {
-		left: 49%;
+		left: 50%;
 		}
+    .dot-2 p {
+        display: none;
+    }
+    .arr-left2{
+        display: none;
+    }
 	.dot-mid p{
 		left: 49%;
 		top: 47%;
@@ -2067,8 +2090,8 @@ ul.social-slide li i.mac{
 		font-size: 14px;
 		}
 	.about-right {
-		float: right;
-		width: 50%;
+		/*float: right;*/
+		/*width: 50%;*/
 		}
 	.about-right-list {
 		margin: 27px 0 0 0;
@@ -2123,7 +2146,7 @@ ul.social-slide li i.mac{
 		width: 54%;
 		}
 	.port-grid {
-		width: 30.9%;
+		width: 30%;
 		}
 	.port-grid:nth-child(3) {
 		margin-right: 0;
@@ -2271,7 +2294,7 @@ ul.social-slide li i.mac{
 		left: 54.9%;
 		}
 	.dot-top p {
-		left: 48.7%;
+		left: 50%;
 		}
 	.dot-mid p {
 		left: 48.7%;
@@ -2616,7 +2639,7 @@ ul.social-slide li i.mac{
 		width: 37%;
 		}
 	.dot-top p {
-		left: 48.3%;
+		left: 50%;
 		top: 13%;
 		}
 	.top {
@@ -2793,14 +2816,14 @@ ul.social-slide li i.mac{
 		font-size: 18px;
 		}
 	.about-me{
-		padding-bottom:0;
+		padding-bottom:90px;
 		}
 	#filters {
 		width: 89%;
 		}
 	.port-grid {
 		margin-right: 7px;
-		width: 32.2%;
+		width: 100%;
 		}
 	.port-grid:nth-child(3) {
 		margin-right: 0;
@@ -2922,7 +2945,7 @@ ul.social-slide li i.mac{
 		left: 53.5%;
 		}
 	.dot-top p {
-		left: 47.9%;
+		left: 50%;
 		}
 	.dot-mid p {
 		left: 47.9%;
@@ -2978,7 +3001,7 @@ ul.social-slide li i.mac{
 		width: 51%;
 		}
 }
-@media(max-width:320px){
+@media(max-width:360px){
 	.banner {
 		min-height: 490px;
 		background: url("../images/banner.jpg") no-repeat -595px -182px;
@@ -3046,8 +3069,8 @@ ul.social-slide li i.mac{
 		width: 100%;
 		}
 	.about-right {
-		float: right;
-		width: 100%;
+		width: 80%;
+        margin-bottom: 26px;
 		}
 	.tab2.wow.bounceIn:nth-child(2) {
 		display: block;
